@@ -27,6 +27,9 @@ Similarly, the TransferFunds intent gathers the source and target account types 
 
 These structured interactions are designed to mimic real-world banking flows, providing both functionality and conversational depth.
 
+![Screenshot 2025-05-31 170255](https://github.com/user-attachments/assets/1746b7fd-58d3-4187-bebd-56dbade92a2b)
+
+
 ## Handling Fallbacks and Improving User Experience
 
 To manage unsupported or unclear user inputs, I configured the built-in FallbackIntent with customized, varied responses that offer guidance instead of default error messages. This significantly improves user experience by offering suggestions or redirecting users to supported options. While the bot responded well to phrases like “Help me” and “Hiya,” some greetings like “Good morning”, “Heya” and “what’s up?” triggered fallback responses, highlighting an area for future improvement through additional intent coverage.
