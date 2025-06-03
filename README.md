@@ -15,7 +15,8 @@ Additionally, I defined a custom slot type for accountType, limiting it to speci
 
 ![image](https://github.com/user-attachments/assets/f34b7a7e-4bc1-4028-9503-b8ab12077dce)
 
-The bot supports several intents tailored to simulate common banking tasks. 
+BankerBot supports multiple intents tailored for common banking interactions, ensuring smooth user experiences.
+
 ### Welcoming Users
 The `WelcomeIntent` sets a friendly tone by greeting users and introducing them to the chatbot, making interactions smooth and engaging.
 
@@ -34,12 +35,14 @@ The `FallbackIntent` prevents disruptions by responding intelligently to unrecog
 BankerBot successfully recognizes greetings like "Help me" and "Hiya," but phrases such as "Good morning", "Heya," and "What's up?" still trigger fallback responses. This highlights an opportunity for expanding intent coverage to further enhance natural conversations.
 
 ## Backend Powered by AWS Lambda
-ankerBot’s business logic is fully managed by AWS Lambda functions, triggered via Lex’s code hooks. These functions handle:
+BankerBot’s business logic is fully managed by AWS Lambda functions, triggered via Lex’s code hooks.
+
+![image](https://github.com/user-attachments/assets/9f73a3f3-9511-4e9c-87a4-2f016e478c2b)
+ These functions handle:
 - Processing user inputs
 - Retrieving slot values
 - Generating dynamic responses
 
-![image](https://github.com/user-attachments/assets/9f73a3f3-9511-4e9c-87a4-2f016e478c2b)
 For streamlined version control and continuous updates, an alias (TestBotAlias) was created, allowing non-disruptive improvements without affecting active deployments.
 
 
