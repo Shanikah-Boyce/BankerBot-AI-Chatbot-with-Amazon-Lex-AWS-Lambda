@@ -7,7 +7,6 @@ BankerBot is an AI-powered banking chatbot built using Amazon Lex V2 and AWS Lam
   <img src="https://github.com/user-attachments/assets/e5a71afc-baea-4ade-b649-4c22239cbef1">
 </p>
 
-## Technical Architecture and Configuration
 The chatbot was built using Amazon Lex V2, with secure access granted through a least-privilege IAM role that allowed Lex to communicate with other AWS services. One of the key configuration choices was setting the intent confidence threshold to 0.40, ensuring that the bot only responds when it is reasonably confident about the user’s intent. This improves response accuracy and minimizes confusion. 
 
 ![image](https://github.com/user-attachments/assets/403ccae8-9ac5-4094-a816-eef1204041d8)
