@@ -34,8 +34,6 @@ BankerBot effectively recognizes greetings like "Help me" and "Hiya," but phrase
 
 By maintaining context and handling unexpected inputs thoughtfully, BankerBot ensures fluid and intuitive interactions that reflect real-world expectations for intelligent banking systems.
 
-![image](https://github.com/user-attachments/assets/c2e27b97-0c17-4252-9d2f-748ede496816)
-
 ## Backend Powered by AWS Lambda
 On the backend, all business logic was implemented using AWS Lambda. These functions, triggered via Lex’s code hooks, are responsible for processing user input, retrieving slot values, generating dynamic responses, and returning them in a format suitable for Lex. To simplify version control and ensure smooth integration, I used an alias named TestBotAlias to connect Lex with Lambda, making updates non-disruptive and easier to manage.
 
