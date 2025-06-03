@@ -16,13 +16,19 @@ Additionally, I defined a custom slot type for accountType, limiting it to speci
 ![image](https://github.com/user-attachments/assets/f34b7a7e-4bc1-4028-9503-b8ab12077dce)
 
 The bot supports several intents tailored to simulate common banking tasks. 
+## Setting the Stage
+The WelcomeIntent greets users warmly, setting a friendly tone and introducing them to the chatbot. This immediately creates a welcoming and engaging experience.
 
-![Screenshot 2025-05-31 170255](https://github.com/user-attachments/assets/cc9334b8-8894-40b9-be54-4b4eacbf6098)
+## Checking Balances
+For balance inquiries, the CheckBalance intent efficiently gathers essential information like the user's account type and date of birth. This triggers a Lambda function that provides a randomized balance for demonstration. To enhance convenience, the FollowupCheckBalance intent allows users to request a subsequent balance check without needing to re-authenticate, streamlining their experience.
 
-The WelcomeIntent introduces the chatbot and sets a friendly tone. The CheckBalance intent collects the user's account type and date of birth, then triggers a Lambda function that returns a randomized balance for demonstration purposes. Similarly, the TransferFunds intent gathers the source and target account types along with the desired transfer amount, incorporating a confirmation prompt to ensure that users verify the transaction before it's completed. These structured interactions are designed to mimic real-world banking flows, providing both functionality and conversational depth.
+## Transferring Funds
+When it comes to moving money, the TransferFunds intent guides users through the process. It collects the source and target account types, along with the desired transfer amount. A crucial confirmation prompt is included to ensure users verify the transaction before it's completed, adding a layer of security and peace of mind.
+
+## Handling the Unexpected
+Finally, the FallbackIntent acts as a safety net, gracefully managing situations where no other intent matches the user's input. This ensures the conversation remains smooth and intuitive, even when queries are unexpected.
 
 ## Handling Fallbacks and Improving User Experience
-
 To manage unsupported or unclear user inputs, I configured the built-in FallbackIntent with customized, varied responses that offer guidance instead of default error messages. This significantly improves user experience by offering suggestions or redirecting users to supported options. While the bot responded well to phrases like “Help me” and “Hiya,” some greetings like “Good morning”, “Heya” and “what’s up?” triggered fallback responses, highlighting an area for future improvement through additional intent coverage.
 
 ![image](https://github.com/user-attachments/assets/c2e27b97-0c17-4252-9d2f-748ede496816)
