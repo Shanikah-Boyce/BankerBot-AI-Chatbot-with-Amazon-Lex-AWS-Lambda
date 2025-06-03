@@ -16,24 +16,26 @@ Additionally, I defined a custom slot type for accountType, limiting it to speci
 ![image](https://github.com/user-attachments/assets/f34b7a7e-4bc1-4028-9503-b8ab12077dce)
 
 The bot supports several intents tailored to simulate common banking tasks. 
-## Setting the Stage
-The WelcomeIntent greets users warmly, setting a friendly tone and introducing them to the chatbot. This immediately creates a welcoming and engaging experience.
+### Welcoming Users
+The WelcomeIntent sets a friendly tone by greeting users and introducing them to the chatbot, making interactions smooth and engaging.
 
-## Checking Balances
-For balance inquiries, the CheckBalance intent efficiently gathers essential information like the user's account type and date of birth. This triggers a Lambda function that provides a randomized balance for demonstration. To enhance convenience, the FollowupCheckBalance intent allows users to request a subsequent balance check without needing to re-authenticate, streamlining their experience.
+### Checking Balances
+The CheckBalance intent gathers key details like the user's account type and date of birth, triggering a Lambda function that generates a randomized balance for demonstration purposes. The FollowupCheckBalance intent allows users to check their balance again without re-authenticating, making repeated inquiries effortless.
 
-## Transferring Funds
-When it comes to moving money, the TransferFunds intent guides users through the process. It collects the source and target account types, along with the desired transfer amount. A crucial confirmation prompt is included to ensure users verify the transaction before it's completed, adding a layer of security and peace of mind.
+BankerBot uses input and output context tags to retain information across interactions. For instance, the user's date of birth, collected during a CheckBalance query, is stored and reused for follow-up intents, creating a seamless conversation flow.
 
-## Handling the Unexpected
-Finally, the FallbackIntent acts as a safety net, gracefully managing situations where no other intent matches the user's input. This ensures the conversation remains smooth and intuitive, even when queries are unexpected.
+### Transferring Funds
+The TransferFunds intent guides users through money transfers, collecting the source and target account types along with the transfer amount. A confirmation prompt ensures transactions are verified before completion, adding security and peace of mind.
 
-## Handling Fallbacks and Improving User Experience
-To manage unsupported or unclear user inputs, I configured the built-in FallbackIntent with customized, varied responses that offer guidance instead of default error messages. This significantly improves user experience by offering suggestions or redirecting users to supported options. While the bot responded well to phrases like “Help me” and “Hiya,” some greetings like “Good morning”, “Heya” and “what’s up?” triggered fallback responses, highlighting an area for future improvement through additional intent coverage.
+### Handling the Unexpected Inputs
+The FallbackIntent prevents disruptions by responding intelligently to unrecognized inputs. Instead of default error messages, it offers guidance and redirects users to relevant options.
+
+BankerBot effectively recognizes greetings like "Help me" and "Hiya," but phrases such as "Good morning," "Heya," and "What's up?" still trigger fallback responses, presenting an opportunity for refinement in intent coverage.
+
+By maintaining context and handling unexpected inputs thoughtfully, BankerBot ensures fluid and intuitive interactions that reflect real-world expectations for intelligent banking systems.
 
 ![image](https://github.com/user-attachments/assets/c2e27b97-0c17-4252-9d2f-748ede496816)
 
-A key feature of BankerBot is its use of input and output context tags, which allow information to persist across multiple intents. For example, the user’s date of birth, collected during a CheckBalance query, is stored using an output context and then reused by a follow-up intent without requiring the user to repeat the information. This creates a more natural, fluid conversation and reflects real-world expectations for intelligent systems.
 
 On the backend, all business logic was implemented using AWS Lambda. These functions, triggered via Lex’s code hooks, are responsible for processing user input, retrieving slot values, generating dynamic responses, and returning them in a format suitable for Lex. To simplify version control and ensure smooth integration, I used an alias named TestBotAlias to connect Lex with Lambda, making updates non-disruptive and easier to manage.
 
