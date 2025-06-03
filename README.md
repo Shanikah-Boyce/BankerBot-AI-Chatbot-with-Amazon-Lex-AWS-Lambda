@@ -1,10 +1,11 @@
 # BankerBot-AI-Chatbot-with-Amazon-Lex-AWS-Lambda
 
 ## Project Overview
-BankerBot is an AI-powered banking chatbot designed using Amazon Lex V2 and AWS Lambda. It serves as a virtual banking assistant that can greet users, respond to balance inquiries, process fund transfers, handle fallback interactions and maintain context across multiple exchanges. By leveraging Lex’s built-in natural language understanding and speech recognition, the bot is capable of interpreting both text and voice inputs. This project was an opportunity to gain practical experience in building conversational interfaces using cloud-native technologies.
+BankerBot is an AI-powered banking chatbot built using Amazon Lex V2 and AWS Lambda. This virtual banking assistant is designed to handle common user interactions, including greetings, balance inquiries, fund transfers, and managing unsupported inputs. By leveraging Lex's natural language understanding (NLU) and speech recognition capabilities, BankerBot can interpret both text and voice inputs, offering a versatile conversational experience. This project was an excellent opportunity to gain practical experience in building conversational interfaces using cloud-native technologies.
 
-![Amzon Lex drawio](https://github.com/user-attachments/assets/e5a71afc-baea-4ade-b649-4c22239cbef1)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e5a71afc-baea-4ade-b649-4c22239cbef1">
+</p>
 
 The chatbot was built using Amazon Lex V2, with secure access granted through a least-privilege IAM role that allowed Lex to communicate with other AWS services. One of the key configuration choices was setting the intent confidence threshold to 0.40, ensuring that the bot only responds when it is reasonably confident about the user’s intent. This improves response accuracy and minimizes confusion. 
 
