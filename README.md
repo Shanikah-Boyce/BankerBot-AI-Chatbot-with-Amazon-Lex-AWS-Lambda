@@ -30,9 +30,8 @@ The `TransferFunds` intent guides users through money transfers, collecting the 
 ### Handling the Unexpected Inputs
 The `FallbackIntent` prevents disruptions by responding intelligently to unrecognized inputs. Instead of default error messages, it offers guidance and redirects users to relevant options.
 
-BankerBot effectively recognizes greetings like "Help me" and "Hiya," but phrases such as "Good morning," "Heya," and "What's up?" still trigger fallback responses, presenting an opportunity for refinement in intent coverage.
-
-By maintaining context and handling unexpected inputs thoughtfully, BankerBot ensures fluid and intuitive interactions that reflect real-world expectations for intelligent banking systems.
+## Refinement Opportunities
+BankerBot successfully recognizes greetings like "Help me" and "Hiya," but phrases such as "Good morning", "Heya," and "What's up?" still trigger fallback responses. This highlights an opportunity for expanding intent coverage to further enhance natural conversations.
 
 ## Backend Powered by AWS Lambda
 On the backend, all business logic was implemented using AWS Lambda. These functions, triggered via Lex’s code hooks, are responsible for processing user input, retrieving slot values, generating dynamic responses, and returning them in a format suitable for Lex. To simplify version control and ensure smooth integration, I used an alias named TestBotAlias to connect Lex with Lambda, making updates non-disruptive and easier to manage.
