@@ -14,21 +14,11 @@ Additionally, I defined a custom slot type for accountType, limiting it to speci
 
 ![image](https://github.com/user-attachments/assets/f34b7a7e-4bc1-4028-9503-b8ab12077dce)
 
-The bot supports several intents tailored to simulate common banking tasks. The WelcomeIntent introduces the chatbot and sets a friendly tone. The CheckBalance intent collects the user's account type and date of birth, then triggers a Lambda function that returns a randomized balance for demonstration purposes. 
+The bot supports several intents tailored to simulate common banking tasks. 
 
+![Screenshot 2025-05-31 170255](https://github.com/user-attachments/assets/cc9334b8-8894-40b9-be54-4b4eacbf6098)
 
-![image](https://github.com/user-attachments/assets/d8ab9c53-d15e-4b82-b920-4a05e6b7a6de)
-
-![image](https://github.com/user-attachments/assets/92813e3c-cdd2-437a-89b0-d047f69b351e)
-
-Similarly, the TransferFunds intent gathers the source and target account types along with the desired transfer amount, incorporating a confirmation prompt to ensure that users verify the transaction before it's completed. 
-
-![image](https://github.com/user-attachments/assets/9868638d-a457-4bfe-bf70-b44dcfb36869)
-
-These structured interactions are designed to mimic real-world banking flows, providing both functionality and conversational depth.
-
-![Screenshot 2025-05-31 170255](https://github.com/user-attachments/assets/1746b7fd-58d3-4187-bebd-56dbade92a2b)
-
+The WelcomeIntent introduces the chatbot and sets a friendly tone. The CheckBalance intent collects the user's account type and date of birth, then triggers a Lambda function that returns a randomized balance for demonstration purposes. Similarly, the TransferFunds intent gathers the source and target account types along with the desired transfer amount, incorporating a confirmation prompt to ensure that users verify the transaction before it's completed. These structured interactions are designed to mimic real-world banking flows, providing both functionality and conversational depth.
 
 ## Handling Fallbacks and Improving User Experience
 
