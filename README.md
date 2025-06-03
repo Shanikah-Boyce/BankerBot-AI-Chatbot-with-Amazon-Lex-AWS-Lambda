@@ -34,9 +34,17 @@ The `FallbackIntent` prevents disruptions by responding intelligently to unrecog
 BankerBot successfully recognizes greetings like "Help me" and "Hiya," but phrases such as "Good morning", "Heya," and "What's up?" still trigger fallback responses. This highlights an opportunity for expanding intent coverage to further enhance natural conversations.
 
 ## Backend Powered by AWS Lambda
-On the backend, all business logic was implemented using AWS Lambda. These functions, triggered via Lex’s code hooks, are responsible for processing user input, retrieving slot values, generating dynamic responses, and returning them in a format suitable for Lex. To simplify version control and ensure smooth integration, I used an alias named TestBotAlias to connect Lex with Lambda, making updates non-disruptive and easier to manage.
+ankerBot’s business logic is fully managed by AWS Lambda functions, triggered via Lex’s code hooks. These functions handle:
+- Processing user inputs
+- Retrieving slot values
+- Generating dynamic responses
 
 ![image](https://github.com/user-attachments/assets/9f73a3f3-9511-4e9c-87a4-2f016e478c2b)
+For streamlined version control and continuous updates, an alias (TestBotAlias) was created, allowing non-disruptive improvements without affecting active deployments.
+
+
+## Lesson Learned
+..
 
 ## Conclusion
-BankerBot is a robust example of a serverless, AI-driven chatbot built with AWS services. It showcases how to design, implement, and deploy a conversational agent capable of managing multi-step workflows, retaining context, and providing a user-friendly experience. Through this project, I gained valuable hands-on experience in conversational AI, cloud infrastructure, secure integrations, and deployment automation. BankerBot reflects my growing capabilities in building intelligent, scalable, and maintainable solutions in a cloud-native environment.
+BankerBot is a powerful example of an AI-driven, serverless chatbot designed for modern banking needs. By leveraging Amazon Lex and AWS Lambda, the chatbot ensures efficient, secure, and intelligent interactions. This project showcases expertise in building scalable conversational agents, maintaining user context, and delivering seamless digital banking solutions.
