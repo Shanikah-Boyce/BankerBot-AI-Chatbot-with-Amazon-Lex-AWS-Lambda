@@ -35,15 +35,9 @@ The `FallbackIntent` prevents disruptions by responding intelligently to unrecog
 BankerBot successfully recognizes greetings like "Help me" and "Hiya," but phrases such as "Good morning", "Heya," and "What's up?" still trigger fallback responses. This highlights an opportunity for expanding intent coverage to further enhance natural conversations.
 
 ## Backend Powered by AWS Lambda
-BankerBot’s business logic is fully managed by AWS Lambda functions, triggered via Lex’s code hooks.
+BankerBot's business logic is entirely managed by AWS Lambda functions, which are activated through Lex's code hooks. These functions are responsible for processing user inputs, retrieving slot values, and generating dynamic responses. To ensure smooth version control and continuous updates, an alias called TestBotAlias was established, enabling seamless improvements without disrupting active deployments.
 
 ![image](https://github.com/user-attachments/assets/9f73a3f3-9511-4e9c-87a4-2f016e478c2b)
- These functions handle:
-- Processing user inputs
-- Retrieving slot values
-- Generating dynamic responses
-
-For streamlined version control and continuous updates, an alias (TestBotAlias) was created, allowing non-disruptive improvements without affecting active deployments.
 
 
 ## Lesson Learned
