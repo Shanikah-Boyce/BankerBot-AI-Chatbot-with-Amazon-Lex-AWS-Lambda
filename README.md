@@ -1,21 +1,14 @@
 ## Project Overview
+BankerBot is an AI-powered banking chatbot designed to enhance financial accessibility and streamline everyday transactions using Amazon Lex V2 and AWS Lambda.
+
+Its core function is to provide a secure, efficient, and intuitive virtual banking assistant capable of handling balance inquiries, fund transfers, greetings, and even managing unsupported inputs. Leveraging Lex’s advanced natural language understanding (NLU) and speech recognition technology, BankerBot ensures seamless interaction via both text and voice.
+
+For optimal security and accuracy, BankerBot operates under a least-privilege IAM role and maintains a 0.40 intent confidence threshold, responding only when confident in the user's request. Data integrity is upheld through a custom slot type for accountType, restricting selections to "Checking," "Savings," and "Credit." The "Credit" category encompasses leading providers like Visa, Mastercard, Amex, and American Express, allowing users to efficiently manage various financial accounts.
+
+Developing BankerBot has provided valuable hands-on experience in cloud-native conversational AI, emphasizing best practices in security, efficiency, and user-centric design.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e5a71afc-baea-4ade-b649-4c22239cbef1">
 </p>
-
-BankerBot is a banking chatbot powered by AI that aims to improve financial access and automate everyday transactions using Amazon Lex V2 and AWS Lambda.
-
-Its main purpose is to simplify banking interactions with a secure, efficient, and user-friendly virtual assistant that can handle balance inquiries, fund transfers, greetings, and even manage unsupported inputs. By utilizing Lex’s natural language understanding (NLU) and speech recognition tech, it guarantees smooth communication through both text and voice functions.
-
-To maintain security and precision, BankerBot works under a least-privilege IAM role and sets a 0.40 intent confidence threshold, meaning it will only respond when it’s fairly sure of what the user needs. It also ensures data integrity through a custom slot type for accountType, restricting options to "Checking," "Savings," and "Credit." The "Credit" category includes leading providers such as Visa, Mastercard, Amex, and American Express, making it easy for users to manage a variety of financial accounts.
-
-Building BankerBot has given me lots of hands-on experience in cloud-native conversational AI, focusing on best practices regarding security, efficiency, and user-centered design.
-
-![image](https://github.com/user-attachments/assets/403ccae8-9ac5-4094-a816-eef1204041d8)
-
-
-
-![image](https://github.com/user-attachments/assets/f34b7a7e-4bc1-4028-9503-b8ab12077dce)
 
 ## Core Functionality: Supporting Key Banking Interactions
 BankerBot supports multiple intents tailored for common banking interactions, ensuring smooth user experiences.
