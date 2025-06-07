@@ -16,7 +16,7 @@ BankerBot supports multiple intents tailored for common banking interactions, en
 ### Welcoming Users
 The `WelcomeIntent` sets a friendly tone by greeting users and introducing them to the chatbot, making interactions smooth and engaging.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/63bceca6-dfa0-4b0a-b575-ace59b336b18" width="54%" height="218px">
+  <img src="https://github.com/user-attachments/assets/53b60bf8-884b-486c-9f56-617bdfe895f7" width="54%" height="218px">
 </p>
 
 ### Checking Balances
