@@ -42,7 +42,7 @@ While BankerBot accurately understands standard phrases like "Help me" and "Hiya
 ## Backend Powered by AWS Lambda
 BankerBot's operations are fully handled by AWS Lambda functions, triggered via Lex's code hooks. These functions take care of processing user inputs, fetching slot values, and creating dynamic responses. To maintain smooth version control and ongoing updates, an alias named TestBotAlias was created, allowing for seamless enhancements without interrupting live deployments.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9f73a3f3-9511-4e9c-87a4-2f016e478c2b" width="67%" height="490">
+  <img src="https://github.com/user-attachments/assets/8be05de3-4250-4fd6-b8ee-5d4b790c3796" width="67%" height="260">
 </p>
 
 
