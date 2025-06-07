@@ -1,3 +1,5 @@
+# BankerBot: AI-Driven Banking Assistance with Amazon Lex & AWS Lambda
+
 ## Project Overview
 BankerBot is an AI-powered banking chatbot designed to enhance financial accessibility and streamline everyday transactions using Amazon Lex V2 and AWS Lambda.
 
