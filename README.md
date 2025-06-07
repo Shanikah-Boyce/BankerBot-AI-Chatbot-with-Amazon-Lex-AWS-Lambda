@@ -26,7 +26,7 @@ The `TransferFunds` intent guides users through money transfers, collecting the 
 The `FallbackIntent` prevents disruptions by responding intelligently to unrecognized inputs. Instead of default error messages, it offers guidance and redirects users to relevant options.
 
 ## Refinement Opportunities
-While BankerBot successfully recognizes standard greetings like "Help me" and "Hiya," there's an opportunity to expand its understanding of more casual phrases such as "Good morning," "Heya," and "What's up?" Currently, these trigger fallback responses. Expanding the training data for these and similar expressions would significantly enhance the naturalness and fluidity of conversations.
+While BankerBot accurately understands standard phrases like "Help me" and "Hiya", expanding its training data to include casual greetings like "Good morning", "Heya" and "What's up?" would improve conversational fluidity.
 
 ## Backend Powered by AWS Lambda
 BankerBot's business logic is entirely managed by AWS Lambda functions, which are activated through Lex's code hooks. These functions are responsible for processing user inputs, retrieving slot values, and generating dynamic responses. To ensure smooth version control and continuous updates, an alias called TestBotAlias was established, enabling seamless improvements without disrupting active deployments.
