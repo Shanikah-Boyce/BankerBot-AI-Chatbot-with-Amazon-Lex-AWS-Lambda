@@ -17,9 +17,7 @@ BankerBot supports multiple intents tailored for common banking interactions, en
 The `WelcomeIntent` sets a friendly tone by greeting users and introducing them to the chatbot, making interactions smooth and engaging.
 
 ### Checking Balances
-The `CheckBalance` intent gathers key details like the user's account type and date of birth, triggering a Lambda function that generates a randomized balance for demonstration purposes. The `FollowupCheckBalance` intent allows users to check their balance again without re-authenticating, making repeated inquiries effortless.
-
-BankerBot uses input and output context tags to retain information across interactions. For instance, the user's date of birth, collected during a CheckBalance query, is stored and reused for follow-up intents, creating a seamless conversation flow.
+The `CheckBalance` intent in BankerBot is designed to gather essential user details, specifically their account type and date of birth. This information then activates a Lambda function that provides a random balance for demo purposes. For a smoother experience, the `FollowupCheckBalance` intent lets users check their balance again without needing to verify their identity a second time. BankerBot keeps track of information across different chats by using input and output context tags. For example, once your date of birth is given during a CheckBalance request, BankerBot remembers it and uses it for any related follow-up questions, making the conversation flow easily.
 
 ### Transferring Funds
 The `TransferFunds` intent guides users through money transfers, collecting the source and target account types along with the transfer amount. A confirmation prompt ensures transactions are verified before completion, adding security and peace of mind.
