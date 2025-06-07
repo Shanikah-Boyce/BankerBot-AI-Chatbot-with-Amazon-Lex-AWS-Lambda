@@ -15,7 +15,9 @@ BankerBot supports multiple intents tailored for common banking interactions, en
 
 ### Welcoming Users
 The `WelcomeIntent` sets a friendly tone by greeting users and introducing them to the chatbot, making interactions smooth and engaging.
-![Screenshot 2025-05-31 114736](https://github.com/user-attachments/assets/e9e04d30-ba4c-4d25-8262-72ede56c4e8d)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a1f8b8c2-1e8d-4224-8951-3edca611c8f6" width="34%" height="539px">
+</p>
 
 ### Checking Balances
 The `CheckBalance` intent in BankerBot is designed to gather essential user details, specifically their account type and date of birth. This information then activates a Lambda function that provides a random balance for demostration purposes. For a smoother experience, the `FollowupCheckBalance` intent lets users check their balance again without needing to verify their identity a second time. BankerBot keeps track of information across different chats by using input and output context tags. For example, once your date of birth is given during a CheckBalance request, BankerBot remembers it and uses it for any related follow-up questions, making the conversation flow easily.
@@ -25,10 +27,11 @@ The `CheckBalance` intent in BankerBot is designed to gather essential user deta
   <img src="https://github.com/user-attachments/assets/c4679b4d-d5e1-45d8-94bc-f84d359eb6cf" width="37%" height="479px">
 </p>
 
-
 ### Transferring Funds
 The `TransferFunds` intent guides users through money transfers, collecting the source and target account types along with the transfer amount. A confirmation prompt ensures transactions are verified before completion, adding security and peace of mind.
-![Screenshot 2025-05-31 164834](https://github.com/user-attachments/assets/fdcd8e5d-f38a-4ba0-af95-6b60e71e1b11)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fdcd8e5d-f38a-4ba0-af95-6b60e71e1b11" width="34%">
+</p>
 
 ### Handling the Unexpected Inputs
 The `FallbackIntent` prevents disruptions by responding intelligently to unrecognized inputs. Instead of default error messages, it offers guidance and redirects users to relevant options.
