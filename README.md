@@ -16,7 +16,7 @@ BankerBot supports multiple intents tailored for common banking interactions, en
 ### Welcoming Users
 The `WelcomeIntent` sets a friendly tone by greeting users and introducing them to the chatbot, making interactions smooth and engaging.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a1f8b8c2-1e8d-4224-8951-3edca611c8f6" width="31%" height="439px">
+  <img src="https://github.com/user-attachments/assets/63bceca6-dfa0-4b0a-b575-ace59b336b18" width="54%" height="218px">
 </p>
 
 ### Checking Balances
@@ -35,7 +35,9 @@ The `TransferFunds` intent guides users through money transfers, collecting the 
 
 ### Handling the Unexpected Inputs
 The `FallbackIntent` prevents disruptions by responding intelligently to unrecognized inputs. Instead of default error messages, it offers guidance and redirects users to relevant options.
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a1f8b8c2-1e8d-4224-8951-3edca611c8f6" width="31%" height="439px">
+</p>
 ## Refinement Opportunities
 While BankerBot accurately understands standard phrases like "Help me" and "Hiya", expanding its training data to include casual greetings like "Good morning", "Heya" and "What's up?" would improve conversational fluidity.
 
