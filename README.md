@@ -10,7 +10,7 @@ Developing BankerBot has provided valuable hands-on experience in cloud-native c
   <img src="https://github.com/user-attachments/assets/e5a71afc-baea-4ade-b649-4c22239cbef1">
 </p>
 
-## Core Functionality: Supporting Key Banking Interactions
+## Key User Interactions
 BankerBot supports multiple intents tailored for common banking interactions, ensuring smooth user experiences.
 
 ### Welcoming Users
