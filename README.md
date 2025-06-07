@@ -61,7 +61,5 @@ These enhancements would significantly expand BankerBot’s capabilities, allowi
 ## Conclusion
 BankerBot is a powerful example of an AI-driven, serverless chatbot designed for modern banking needs. By leveraging Amazon Lex and AWS Lambda, the chatbot ensures efficient, secure, and intelligent interactions. This project showcases expertise in building scalable conversational agents, maintaining user context, and delivering seamless digital banking solutions.
 
----
-###### Nextwork Student
-###### nextwork.org
----
+###### Nextwork Student | nextwork.org
+
