@@ -18,11 +18,13 @@ The `WelcomeIntent` sets a friendly tone by greeting users and introducing them 
 ![Screenshot 2025-05-31 114736](https://github.com/user-attachments/assets/e9e04d30-ba4c-4d25-8262-72ede56c4e8d)
 
 ### Checking Balances
-The `CheckBalance` intent in BankerBot is designed to gather essential user details, specifically their account type and date of birth. This information then activates a Lambda function that provides a random balance for demo purposes. For a smoother experience, the `FollowupCheckBalance` intent lets users check their balance again without needing to verify their identity a second time. BankerBot keeps track of information across different chats by using input and output context tags. For example, once your date of birth is given during a CheckBalance request, BankerBot remembers it and uses it for any related follow-up questions, making the conversation flow easily.
+The `CheckBalance` intent in BankerBot is designed to gather essential user details, specifically their account type and date of birth. This information then activates a Lambda function that provides a random balance for demostration purposes. For a smoother experience, the `FollowupCheckBalance` intent lets users check their balance again without needing to verify their identity a second time. BankerBot keeps track of information across different chats by using input and output context tags. For example, once your date of birth is given during a CheckBalance request, BankerBot remembers it and uses it for any related follow-up questions, making the conversation flow easily.
 
-![Screenshot 2025-05-31 162446](https://github.com/user-attachments/assets/7b382b92-b992-4eeb-8060-87424460cfc9)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7b382b92-b992-4eeb-8060-87424460cfc9" width="37%" height="479px">
+  <img src="https://github.com/user-attachments/assets/c4679b4d-d5e1-45d8-94bc-f84d359eb6cf" width="37%" height="479px">
+</p>
 
-![Screenshot 2025-05-31 162503](https://github.com/user-attachments/assets/c4679b4d-d5e1-45d8-94bc-f84d359eb6cf)
 
 ### Transferring Funds
 The `TransferFunds` intent guides users through money transfers, collecting the source and target account types along with the transfer amount. A confirmation prompt ensures transactions are verified before completion, adding security and peace of mind.
